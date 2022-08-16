@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Finances</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Personal Finances</h1>
+
+      <!-- output list -->
+      <ul class="item-list"></ul>
+    </div>
+
+    <footer>
+      <form class="new-item-form">
+        <div class="field">
+          <label>Type:</label>
+          <select id="type">
+            <option value="invoice">Invoice</option>
+            <option value="payment">Payment</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>To / From:</label>
+          <input type="text" id="tofrom" />
+        </div>
+        <div class="field">
+          <label>Details:</label>
+          <input type="text" id="details" />
+        </div>
+        <div class="field">
+          <label>Amount ($):</label>
+          <input type="number" id="amount" />
+        </div>
+        <button>Add</button>
+        <div id="error"></div>
+      </form>
+
+      <a href="https://gonzalo-fuente.netlify.app"
+        ><em>gonz4 Web Designs</em></a
+      >
+    </footer>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
